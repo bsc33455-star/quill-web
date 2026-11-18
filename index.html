@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Quill Web</title>
-<meta charset="utf-8">
+<title>Quill – Screenwriting Editor for Students and Writers</title>
+<meta name="description" content="Quill is a free screenwriting editor for learning and practicing industry-standard screenplay format: scene headings, action, character names, dialogue, parentheticals and transitions. Supports the Fountain plain-text format.">
+<meta name="keywords" content="screenwriting, screenplay format, script writing, creative writing, film studies, English class, Fountain, education, writing tool">
+<meta name="author" content="Quill">
+<meta property="og:title" content="Quill – Screenwriting Editor">
+<meta property="og:description" content="A free educational screenwriting editor for creative writing and film classes.">
+<link rel="help" href="guide.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap">
 <style>
 /* Layout: glass sidebar (scripts) + glass toolbar over a soft desk; white Courier page centred. */
@@ -107,10 +112,11 @@ kbd{font:11px var(--ui);border:1px solid var(--glass-line);border-radius:4px;pad
 </div></div>
 <div id="auth" class="sheet" hidden><div class="box glass" style="max-width:380px">
   <strong>Sign in to sync with Quill for Mac</strong>
-  <span class="grow" style="color:var(--muted);font-size:12px">Use the same email and password in Quill for Mac (sync dot in the toolbar → Quill Web Sync). On a shared school computer, sign out when you leave.</span>
+  <span class="grow" style="color:var(--muted);font-size:12px">Use the same email and password in Quill for Mac (File → Quill Web Sync…). On a shared school computer, sign out when you leave.</span>
   <input id="auEmail" type="email" placeholder="Email" autocomplete="username" class="field">
   <input id="auPw" type="password" placeholder="Password" autocomplete="current-password" class="field">
   <span id="auNote" style="font-size:12px;color:var(--muted)"></span>
+  <p style="font-size:12px;color:var(--muted);margin:0">Quill is a screenwriting editor for creative writing and film classes. It formats scripts in standard screenplay style. <a href="guide.html" style="color:var(--accent)">Learn screenplay format →</a></p>
   <div class="row"><button id="auOut">Sign out</button><button id="auLater">Not now</button><button id="auNew">Create account</button><button class="primary" id="auIn">Sign in</button></div>
 </div></div>
 <div id="confirm" class="sheet" hidden><div class="box glass"><span id="cfText"></span><div class="row"><button id="cfNo">Cancel</button><button class="primary" id="cfYes">Delete</button></div></div></div>
